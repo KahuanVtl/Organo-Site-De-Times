@@ -5,7 +5,6 @@ import Botao from '../Botao'
 import { useState } from 'react'
 
 function Formulario(props){
-
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
@@ -19,6 +18,10 @@ function Formulario(props){
             imagem,
             time
         })
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     }
 
     return(
